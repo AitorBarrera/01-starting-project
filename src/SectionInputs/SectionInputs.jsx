@@ -4,7 +4,7 @@ function SectionInputs({ investmentParameters, changeInvestmentParameters }) {
 
     const changeParameter = (parameter, value) => {
         let investmentParametersAux = {...investmentParameters};
-        investmentParametersAux[parameter] = parseInt(value);
+        investmentParametersAux[parameter] = parseInt(+value);
         console.log(investmentParametersAux);
         
         changeInvestmentParameters(investmentParametersAux);
